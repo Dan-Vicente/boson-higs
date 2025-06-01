@@ -1,8 +1,13 @@
+
 <div align="center">
 
 # 🔬 Higgs Boson Detection: H→ττ Channel Analysis
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=800&lines=Physics-Informed+Machine+Learning;Higgs+Boson+Detection+Challenge;H%E2%86%9C%CF%84%CF%84+Channel+Analysis;CERN+ATLAS+Detector+Simulation" alt="Typing SVG" />
+
+**🌐 Language / Idioma:**
+[![English](https://img.shields.io/badge/🇺🇸-English-blue?style=for-the-badge)](README.md)
+[![Português](https://img.shields.io/badge/🇧🇷-Português-green?style=for-the-badge)](README.pt.md)
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.8%2B-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://tensorflow.org/)
@@ -21,98 +26,97 @@
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 
-> **🎯 Uma implementação completa de Machine Learning para detecção do Bóson de Higgs no canal H→ττ**  
-> *Combinando física de partículas com IA de última geração*
+> **🎯 A complete Machine Learning implementation for Higgs Boson detection in the H→ττ channel**  
+> *Combining particle physics with cutting-edge AI*
 
 </div>
 
 ---
-<div>
 
 ## 📖 Table of Contents
 
-1. [Contexto Físico](#-contexto-físico)
-2. [O Canal H→ττ](#-o-canal-hττ)
+1. [Physics Background](#-physics-background)
+2. [The H→ττ Channel](#-the-hττ-channel)
 3. [Project Statistics](#-project-statistics)
 4. [Project Architecture](#️-project-architecture)
 5. [Quick Start](#-quick-start)
-6. [Estrutura do Projeto](#-estrutura-do-projeto)
-7. [Metodologia Científica](#-metodologia-científica)
-8. [Features Físicas](#️-features-físicas)
-9. [Resultados e Performance](#-resultados-e-performance)
-10. [Física Detalhada](#️-física-detalhada)
-11. [Como Contribuir](#-como-contribuir)
-12. [Agradecimentos](#-agradecimentos)
+6. [Project Structure](#-project-structure)
+7. [Scientific Methodology](#-scientific-methodology)
+8. [Physics Features](#️-physics-features)
+9. [Results & Performance](#-results--performance)
+10. [Detailed Physics](#️-detailed-physics)
+11. [How to Contribute](#-how-to-contribute)
+12. [Acknowledgments](#-acknowledgments)
 
 ---
-  
-## 🌌 Contexto Físico
 
-### O Bóson de Higgs: A "Partícula de Deus"
+## 🌌 Physics Background
 
-O **Bóson de Higgs** é uma partícula fundamental descoberta em 2012 no Large Hadron Collider (LHC) do CERN. Esta descoberta confirmou o **Mecanismo de Higgs**, 
-que explica como as partículas adquirem massa no universo.
+### The Higgs Boson: The "God Particle"
 
-#### Física Fundamental:
+The **Higgs Boson** is a fundamental particle discovered in 2012 at the Large Hadron Collider (LHC) at CERN. This discovery confirmed the **Higgs Mechanism**, which explains how particles acquire mass in the universe.
 
-**Equação do Campo de Higgs:**
+#### Fundamental Physics:
 
+**Higgs Field Equation:**
 ℒ = (∂μφ)†(∂μφ) - μ²φ†φ - λ(φ†φ)²
 
 
-Onde:
-- `φ` é o campo de Higgs
-- `μ²` é o parâmetro de massa
-- `λ` é a constante de acoplamento
 
-**Propriedades do Higgs:**
-- **Massa**: 125.1 ± 0.1 GeV/c²
-- **Spin**: 0 (partícula escalar)
-- **Carga**: Neutra
-- **Paridade**: Positiva
+Where:
+- `φ` is the Higgs field
+- `μ²` is the mass parameter
+- `λ` is the coupling constant
 
-### Por que H→ττ é Importante?
+**Higgs Properties:**
+- **Mass**: 125.1 ± 0.1 GeV/c²
+- **Spin**: 0 (scalar particle)
+- **Charge**: Neutral
+- **Parity**: Positive
 
-O canal de decaimento **H→ττ** (Higgs para dois taus) é crucial porque:
+### Why is H→ττ Important?
 
-1. **Alta Taxa de Branching**: ~6.3% de todos os decaimentos do Higgs
-2. **Sensibilidade ao Acoplamento**: Permite medir o acoplamento Higgs-lépton
-3. **Background Discriminável**: Assinatura única no detector
-4. **Física Além do Modelo Padrão**: Sensível a nova física
+The **H→ττ** (Higgs to two taus) decay channel is crucial because:
+
+1. **High Branching Ratio**: ~6.3% of all Higgs decays
+2. **Coupling Sensitivity**: Allows measurement of Higgs-lepton coupling
+3. **Distinguishable Background**: Unique detector signature
+4. **Beyond Standard Model Physics**: Sensitive to new physics
 
 ---
 
-## 🎯 O Canal H→ττ
+## 🎯 The H→ττ Channel
 
-### Física do Decaimento
+### Decay Physics
 
-**Processo Fundamental:**
+**Fundamental Process:**
 pp → H + X → ττ + X
 
+Where:
+- `pp` = proton-proton collision
+- `H` = Higgs Boson
+- `X` = additional products (jets, etc.)
+- `ττ` = tau pair
 
-Onde:
-- `pp` = colisão próton-próton
-- `H` = Bóson de Higgs
-- `X` = produtos adicionais (jets, etc.)
-- `ττ` = par de taus
+### Decay Kinematics
 
-### Cinemática do Decaimento
-**Conservação de Energia-Momento:**
+**Energy-Momentum Conservation:**
 E²total = (∑Ei)² = (pH + pX)²
 pτ₁ + pτ₂ + pν₁ + pν₂ = pH
 
 
-### Assinatura Experimental
 
-**Produtos Detectáveis:**
-1. **Lépton Carregado**: e ou μ (do decaimento τ→ℓνν)
-2. **Missing Energy (MET)**: Neutrinos não detectados
-3. **Jets Hadrônicos**: Do segundo τ ou da produção associada
-4. **Topologia Específica**: Configuração angular característica
+### Experimental Signature
 
-**Invariantes Físicos:**
-- **Massa Transversa**: `mT = √(2pT₁pT₂(1-cos(Δφ)))`
-- **Massa Visível**: `mvis = √((E₁+E₂)² - (p⃗₁+p⃗₂)²)`
+**Detectable Products:**
+1. **Charged Lepton**: e or μ (from τ→ℓνν decay)
+2. **Missing Energy (MET)**: Undetected neutrinos
+3. **Hadronic Jets**: From second τ or associated production
+4. **Specific Topology**: Characteristic angular configuration
+
+**Physical Invariants:**
+- **Transverse Mass**: `mT = √(2pT₁pT₂(1-cos(Δφ)))`
+- **Visible Mass**: `mvis = √((E₁+E₂)² - (p⃗₁+p⃗₂)²)`
 - **Missing Energy**: `MET = |∑p⃗T^miss|`
 
 ---
@@ -159,41 +163,79 @@ pτ₁ + pτ₂ + pν₁ + pν₂ = pH
 ## 🏗️ Project Architecture
 
 <div align="center">
-graph TB
-A[🔬 Raw ATLAS Data] --> B[📊 Part 1: EDA & Physics Visualization]
-B --> C[🔧 Part 2: Physics-Informed Preprocessing]
-C --> D[📈 Part 3: Statistical Analysis & Feature Selection]
-D --> E[🤖 Part 4: Classical ML Models]
-D --> F[🧠 Part 5: Physics-Informed Neural Networks]
-E --> G[🏆 Part 6: Ultimate Ensemble]
-F --> G
-G --> H[📤 Kaggle Submission]
 
+### 📊 Pipeline Overview
 
-subgraph "Classical Models"
-    E --> E1[Random Forest]
-    E --> E2[XGBoost]
-    E --> E3[SVM]
-    E --> E4[Logistic Regression]
-end
+<table>
+<tr>
+<td align="center" colspan="3">
+<h4>🔬 Raw ATLAS Data</h4>
+<p><em>28 Physics Features | 70k+ Events</em></p>
+</td>
+</tr>
+<tr>
+<td align="center">
+<h4>📊 Part 1</h4>
+<strong>EDA & Visualization</strong><br>
+• Kinematic distributions<br>
+• Signal vs Background<br>
+• Physics validation
+</td>
+<td align="center">
+<h4>🔧 Part 2</h4>
+<strong>Preprocessing</strong><br>
+• Missing values (-999.0)<br>
+• Feature engineering<br>
+• Physics invariants
+</td>
+<td align="center">
+<h4>📈 Part 3</h4>
+<strong>Statistical Analysis</strong><br>
+• Significance tests<br>
+• Feature selection<br>
+• Effect size analysis
+</td>
+</tr>
+<tr>
+<td align="center">
+<h4>🤖 Part 4</h4>
+<strong>Classical ML</strong><br>
+• Random Forest<br>
+• XGBoost<br>
+• SVM<br>
+• Logistic Regression
+</td>
+<td align="center">
+<h4>🧠 Part 5</h4>
+<strong>Deep Learning</strong><br>
+• Physics-Informed NN<br>
+• Specialist Networks<br>
+• Attention Mechanisms<br>
+• Ensemble Learning
+</td>
+<td align="center">
+<h4>🏆 Part 6</h4>
+<strong>Ultimate Ensemble</strong><br>
+• Multi-level stacking<br>
+• Adaptive weights<br>
+• Meta-learning<br>
+• Final optimization
+</td>
+</tr>
+<tr>
+<td align="center" colspan="3">
+<h4>📤 Kaggle Submission</h4>
+<p><em>AUC: 0.89+ | Significance: >3σ</em></p>
+</td>
+</tr>
+</table>
 
-subgraph "Deep Learning"
-    F --> F1[Physics-Informed NN]
-    F --> F2[Kinematic Specialist]
-    F --> F3[Angular Specialist]
-    F --> F4[Deep Pattern Net]
-end
+### 🎯 Workflow Details
 
-subgraph "Ensemble Strategy"
-    G --> G1[Weighted Voting]
-    G --> G2[Stacking Meta-Learner]
-    G --> G3[Adaptive Weights]
-end
-
-style A fill:#ff9999
-style H fill:#99ff99
-style G fill:#ffcc99
-
+📊 Data Flow: Raw → Processed → Analyzed → Modeled → Ensembled → Submitted
+🔬 Physics: Conservation Laws → Invariants → Features → Patterns → Predictions
+🧠 ML Flow: Baseline → Optimization → Deep Learning → Ensemble → Validation
+📈 Performance: 0.5 → 0.75 → 0.85 → 0.89+ (AUC Score Evolution)
 
 
 </div>
@@ -203,6 +245,7 @@ style G fill:#ffcc99
 ## 🚀 Quick Start
 
 ### 🔧 Installation
+
 Clone the repository
 git clone https://github.com/Dan-Vicente/boson-higs.git
 cd boson-higs
@@ -213,6 +256,7 @@ source higgs_env/bin/activate # On Windows: higgs_env\Scripts\activate
 
 Install dependencies
 pip install -r requirements.txt
+
 
 ### ⚡ Quick Example
 
@@ -234,8 +278,8 @@ predictions = detector.predict_higgs_probability(test_data)
 Visualize physics insights
 detector.plot_physics_insights()
 
-### 🔬 Physics Feature Engineering
 
+### 🔬 Physics Feature Engineering
 
 import numpy as np
 
@@ -244,6 +288,8 @@ def create_physics_features(df):
 Create physics-informed features based on
 conservation laws and Lorentz invariants
 """
+
+
 # Total transverse energy (conservation)
 df['PHY_total_et'] = df['PRI_lepton_pt'] + df['PRI_met']
 
@@ -261,9 +307,10 @@ df['PHY_centrality'] = np.sqrt(
 
 return df
 
+
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 higgs-boson-detection/
 ├── 📂 data/
@@ -274,12 +321,12 @@ higgs-boson-detection/
 │ ├── 📂 processed/ # Preprocessed data
 │ └── 📂 interim/ # Intermediate data
 ├── 📂 src/
-│ ├── 🔬 parte1_eda.py # Exploratory Data Analysis
-│ ├── 🔧 parte2_preprocessing.py # Physics-informed preprocessing
-│ ├── 📊 parte3_statistics.py # Statistical analysis
-│ ├── 🤖 parte4_classical_ml.py # Classical ML models
-│ ├── 🧠 parte5_deep_learning.py # Neural networks
-│ ├── 🏆 parte6_ensemble.py # Ultimate ensemble
+│ ├── 🔬 part1_eda.py # Exploratory Data Analysis
+│ ├── 🔧 part2_preprocessing.py # Physics-informed preprocessing
+│ ├── 📊 part3_statistics.py # Statistical analysis
+│ ├── 🤖 part4_classical_ml.py # Classical ML models
+│ ├── 🧠 part5_deep_learning.py # Neural networks
+│ ├── 🏆 part6_ensemble.py # Ultimate ensemble
 │ └── 📂 physics_utils/ # Physics utility functions
 ├── 📂 notebooks/
 │ ├── 📓 01_exploratory_analysis.ipynb
@@ -299,188 +346,194 @@ higgs-boson-detection/
 ├── 📄 requirements.txt # Python dependencies
 ├── 📄 requirements-dev.txt # Development dependencies
 ├── 📄 README.md # This file
+├── 📄 README.pt.md # Portuguese version
 ├── 📄 LICENSE # MIT License
 └── 📄 .gitignore # Git ignore rules
 
+
 ---
 
-## 🔬 Metodologia Científica
+## 🔬 Scientific Methodology
 
-### Parte 1: Análise Exploratória e Visualizações Científicas
+### Part 1: Exploratory Data Analysis & Scientific Visualizations
 
-**Objetivos Físicos:**
-- Compreender distribuições das variáveis cinemáticas
-- Identificar assinaturas do sinal H→ττ vs background
-- Validar simulações Monte Carlo
+**Physics Objectives:**
+- Understand kinematic variable distributions
+- Identify H→ττ signal vs background signatures
+- Validate Monte Carlo simulations
 
-**Descobertas Importantes:**
-- Distribuições de pT seguem lei exponencial típica de QCD
-- MET mostra clara diferenciação entre sinal e background
-- Correlações angulares reveladoras da topologia H→ττ
+**Key Discoveries:**
+- pT distributions follow QCD-typical exponential law
+- MET shows clear differentiation between signal and background
+- Angular correlations reveal H→ττ topology
 
-### Parte 2: Pré-processamento e Feature Engineering Física
+### Part 2: Physics-Informed Preprocessing & Feature Engineering
 
-**Tratamento de Missing Values (-999.0):**
+**Missing Values Treatment (-999.0):**
 
-Em física de partículas, `-999.0` **não é um erro**, mas indica limitações físicas:
+In particle physics, `-999.0` **is not an error**, but indicates physical limitations:
 
 def handle_missing_physics(df):
 """
-FÍSICA DOS MISSING VALUES:
+PHYSICS OF MISSING VALUES:
 
-1. Eventos com poucos jets → variáveis de separação indefinidas
-2. Cinemática insuficiente → massas invariantes incalculáveis
-3. Aceitação do detector → regiões não cobertas
+
+1. Few-jet events → undefined separation variables
+2. Insufficient kinematics → incalculable invariant masses
+3. Detector acceptance → uncovered regions
 """
 
-# Estratégia 1: Zero físico para separações angulares
+# Strategy 1: Physical zero for angular separations
 angular_features = ['DER_deltaeta_jet_jet', 'DER_deltar_tau_lep']
 for feature in angular_features:
     mask_single_jet = (df['PRI_jet_num'] <= 1) & (df[feature] == -999.0)
-    df.loc[mask_single_jet, feature] = 0.0  # Fisicamente correto
+    df.loc[mask_single_jet, feature] = 0.0  # Physically correct
 
+**Physics-Based Feature Engineering:**
 
-**Feature Engineering Baseado em Física:**
-
-**1. Invariantes de Lorentz:**
-
-Energia transversa total (conservação)
+**1. Lorentz Invariants:**
+Total transverse energy (conservation)
 PHY_total_et = PRI_lepton_pt + PRI_met
 
-Fração de energia perdida (neutrinos)
+Lost energy fraction (neutrinos)
 PHY_met_fraction = PRI_met / (PHY_total_et + ε)
 
 
-**2. Razões Cinemáticas:**
-
-Razão de massas (indicador de canal)
+**2. Kinematic Ratios:**
+Mass ratio (channel indicator)
 PHY_mass_ratio = DER_mass_vis / DER_mass_transverse_met_lep
 
-Hierarquia de energia
+Energy hierarchy
 PHY_energy_hierarchy = DER_pt_h / PRI_lepton_pt
 
 
-### Parte 3: Análise Estatística Avançada
 
-**Testes de Significância Estatística:**
+### Part 3: Advanced Statistical Analysis
+
+**Statistical Significance Tests:**
 
 **1. Kolmogorov-Smirnov Test:**
 def ks_test_physics(signal_data, background_data):
 """
-H₀: Distribuições são iguais
-H₁: Distribuições diferem (sinal físico!)
-Estatística KS: D = max|F₁(x) - F₂(x)|
+H₀: Distributions are equal
+H₁: Distributions differ (physical signal!)
+
+
+KS Statistic: D = max|F₁(x) - F₂(x)|
 """
 ks_stat, p_value = ks_2samp(signal_data, background_data)
 return ks_stat, p_value
 
 
-
 **2. Effect Size (Cohen's d):**
-
 def cohens_d_physics(signal, background):
 """
-Quantifica diferença física entre distribuições:
+Quantifies physical difference between distributions:
+
 d = (μ₁ - μ₂) / σ_pooled
 
-Interpretação Física:
-- d > 0.8: Efeito grande (discriminação forte)
-- d > 0.5: Efeito médio (discriminação moderada)
-- d < 0.2: Efeito pequeno (pouca discriminação)
+Physical Interpretation:
+- d > 0.8: Large effect (strong discrimination)
+- d > 0.5: Medium effect (moderate discrimination)
+- d < 0.2: Small effect (weak discrimination)
 """
 
-### Parte 4: Modelagem Baseline - Arsenal Clássico
 
-**Algoritmos Implementados:**
+### Part 4: Baseline Modeling - Classical Arsenal
 
-1. **Random Forest**: Ensemble de árvores robustas
-2. **XGBoost**: Gradient boosting otimizado
-3. **Support Vector Machine**: Máxima margem de separação
-4. **Logistic Regression**: Baseline linear interpretável
+**Implemented Algorithms:**
 
-### Parte 5: Deep Learning - Arsenal Neural Avançado
+1. **Random Forest**: Robust ensemble of trees
+2. **XGBoost**: Optimized gradient boosting
+3. **Support Vector Machine**: Maximum margin separation
+4. **Logistic Regression**: Interpretable linear baseline
+
+### Part 5: Deep Learning - Advanced Neural Arsenal
 
 **Physics-Informed Neural Networks (PINNs):**
 
 class PhysicsInformedNN:
 """
-Rede neural que incorpora conhecimento físico:
-ARQUITETURA:
-1. Camadas de extração de features físicas
-2. Attention para correlações de longo alcance
-3. Residual connections para gradientes estáveis
-4. Regularização física específica
+Neural network incorporating physical knowledge:
+
+ARCHITECTURE:
+1. Physics feature extraction layers
+2. Attention for long-range correlations
+3. Residual connections for stable gradients
+4. Physics-specific regularization
 """
 
 
-### Parte 6: Ensemble Final e Otimização
+### Part 6: Final Ensemble & Optimization
 
-**Ensemble Multi-Level:**
+**Multi-Level Ensemble:**
 
 class UltimateHiggsEnsemble:
 """
-Combinação inteligente de TODOS os modelos:
-NÍVEIS:
+Intelligent combination of ALL models:
+
+LEVELS:
 1. Base Learners: RF, XGB, SVM, Deep Learning
-2. Meta Learners: Stacking com validação cruzada
-3. Final Ensemble: Weighted voting adaptatativo
+2. Meta Learners: Stacking with cross-validation
+3. Final Ensemble: Adaptive weighted voting
 """
 
 
 ---
 
-## ⚛️ Features Físicas
+## ⚛️ Physics Features
 
-### Features Primárias (PRI_)
+### Primary Features (PRI_)
 
-**Variáveis Medidas Diretamente:**
+**Directly Measured Variables:**
 
-| Feature | Descrição Física | Unidade | Significado |
-|---------|------------------|---------|-------------|
-| `PRI_lepton_pt` | Momento transverso do lépton | GeV | Energia cinética perpendicular ao feixe |
-| `PRI_lepton_eta` | Pseudorapidez do lépton | - | Ângulo polar: η = -ln(tan(θ/2)) |
-| `PRI_lepton_phi` | Ângulo azimutal do lépton | rad | Rotação em torno do feixe |
-| `PRI_met` | Missing Energy Transverse | GeV | Energia dos neutrinos (não detectados) |
-| `PRI_met_phi` | Direção da energia perdida | rad | Ângulo dos neutrinos |
-| `PRI_jet_num` | Número de jets | - | Atividade hadrônica no evento |
+| Feature | Physical Description | Unit | Meaning |
+|---------|---------------------|------|---------|
+| `PRI_lepton_pt` | Lepton transverse momentum | GeV | Kinetic energy perpendicular to beam |
+| `PRI_lepton_eta` | Lepton pseudorapidity | - | Polar angle: η = -ln(tan(θ/2)) |
+| `PRI_lepton_phi` | Lepton azimuthal angle | rad | Rotation around beam |
+| `PRI_met` | Missing Transverse Energy | GeV | Neutrino energy (undetected) |
+| `PRI_met_phi` | Missing energy direction | rad | Neutrino angle |
+| `PRI_jet_num` | Number of jets | - | Hadronic activity in event |
 
-### Features Derivadas (DER_)
+### Derived Features (DER_)
 
-**Variáveis Calculadas:**
+**Calculated Variables:**
 
-
-Massa transversa (neutrinos + lépton)
+Transverse mass (neutrinos + lepton)
 DER_mass_transverse_met_lep = √(2·pT_lep·MET·(1 - cos(Δφ)))
 
-Massa visível (produtos detectados)
+Visible mass (detected products)
 DER_mass_vis = √((E_vis)² - (p⃗_vis)²)
 
-Momento transverso do candidato Higgs
+Higgs candidate transverse momentum
 DER_pt_h = |p⃗T_lep + p⃗T_met + p⃗T_jets|
 
-### Features Físicas Engineered (PHY_)
 
-**Criadas pelo Nosso Algoritmo:**
+### Physics Engineered Features (PHY_)
 
-1. INVARIANTES DE LORENTZ
-PHY_total_et = PRI_lepton_pt + PRI_met # Conservação de energia
-PHY_pt_imbalance = |∑p⃗T| / ∑|p⃗T| # Desbalanceamento vetorial
+**Created by Our Algorithm:**
 
-2. RAZÕES CARACTERÍSTICAS
+1. LORENTZ INVARIANTS
+PHY_total_et = PRI_lepton_pt + PRI_met # Energy conservation
+PHY_pt_imbalance = |∑p⃗T| / ∑|p⃗T| # Vector imbalance
+
+2. CHARACTERISTIC RATIOS
 PHY_mass_ratio = DER_mass_vis / DER_mass_transverse_met_lep
 PHY_energy_hierarchy = DER_pt_h / PRI_lepton_pt
 
-3. TOPOLOGIA ANGULAR
+3. ANGULAR TOPOLOGY
 PHY_centrality_combined = √(η_centrality² + φ_centrality²)
 PHY_angular_span = DER_deltar_tau_lep
 
-4. TRANSFORMAÇÕES LOGARÍTMICAS
-PHY_log_pt = log(1 + PRI_lepton_pt) # Distribuições QCD log-normais
+4. LOGARITHMIC TRANSFORMATIONS
+PHY_log_pt = log(1 + PRI_lepton_pt) # QCD log-normal distributions
+
 
 
 ---
 
-## 📈 Resultados e Performance
+## 📈 Results & Performance
 
 <div align="center">
 
@@ -526,25 +579,29 @@ phases = ['Baseline', 'Classical ML', 'Deep Learning', 'Ensemble']
 auc_scores = [0.5, 0.75, 0.85, 0.89]
 improvements = ['+0%', '+50%', '+70%', '+78%']
 
+
+
 </div>
 
-### Significância Estatística
+### Statistical Significance
 
-**Definição em Física de Partículas:**
-Significância = S/√(S + B)
+**Definition in Particle Physics:**
+Significance = S/√(S + B)
 
 where:
-S = número de eventos de sinal
-B = número de eventos de background
+S = number of signal events
+B = number of background events
 
-**Nossos Resultados:**
-- **> 3σ**: Evidência forte (probabilidade < 0.13% de ser flutuação)
-- **Comparação**: Descoberta original do Higgs foi declarada com 5σ
-- **Impacto**: Método competitivo para análises reais
+
+
+**Our Results:**
+- **> 3σ**: Strong evidence (probability < 0.13% of being fluctuation)
+- **Comparison**: Original Higgs discovery was declared at 5σ
+- **Impact**: Competitive method for real analyses
 
 ---
 
-## ⚛️ Física Detalhada
+## ⚛️ Detailed Physics
 
 ### The Higgs Mechanism
 
@@ -555,8 +612,12 @@ The **Higgs mechanism** explains how particles acquire mass through spontaneous 
 **Higgs Potential:**
 V(φ) = μ²φ†φ + λ(φ†φ)²
 
+
+
 **For μ² < 0**, the potential has a minimum at:
 |φ| = √(-μ²/2λ) = v/√2
+
+
 
 Where `v ≈ 246 GeV` is the vacuum expectation value.
 
@@ -573,26 +634,29 @@ H → τ⁺ + τ⁻
 ↓ ↓
 ℓ⁺νν hadrons+ν
 
+
+
 ### Experimental Signature
 
 #### Key Observable Variables:
 
 1. **Missing Transverse Energy (MET)**:
-
 MET = |∑ p⃗T^miss| = |p⃗T^ν₁ + p⃗T^ν₂ + p⃗T^ν₃|
 
-2. **Visible Mass**:
 
+2. **Visible Mass**:
 m_vis = √((E_ℓ + E_had)² - (p⃗_ℓ + p⃗_had)²)
 
+text
 
 3. **Transverse Mass**:
-4. m_T = √(2p_T^ℓ · MET · (1 - cos(Δφ)))
+m_T = √(2p_T^ℓ · MET · (1 - cos(Δφ)))
+
 
 
 ---
 
-## 🤝 Como Contribuir
+## 🤝 How to Contribute
 
 <div align="center">
 
@@ -622,7 +686,6 @@ We welcome contributions from the **physics** and **data science** communities!
 
 ### 🛠️ Development Workflow
 
-
 1. Fork and clone
 git clone https://github.com/your-username/boson-higs.git
 cd boson-higs
@@ -648,7 +711,6 @@ git commit -m "Add amazing physics insight for better H→ττ discrimination"
 git push origin feature/amazing-physics-insight
 
 7. Create Pull Request
-
 
 ### 🧪 Testing Guidelines
 
@@ -678,11 +740,12 @@ def test_feature_importance():
 important_features = model.get_feature_importance()
 assert 'DER_mass_vis' in important_features[:10]
 
+
 ---
 
 <div align="center">
 
-## 🌟 Agradecimentos
+## 🌟 Acknowledgments
 
 <table>
 <tr>
@@ -767,7 +830,3 @@ This project serves as:
 </div>
 
 </div>
-
-</div>
-
-
